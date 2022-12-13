@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Basic Scene with Environment - A-Frame</title>
-    <meta  charset="utf-8">
+    <meta charset="utf-8" />
     <meta name="description" content="width=device-width, initial-scale=1" />
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
@@ -11,7 +11,12 @@
   <body style="margin: 0px; overflow: hidden">
     <h1>hallo</h1>
     <a-scene>
+      <!-- Vorladen von extern genutzen Quellen um das laden zu beschleunigen -->
+      <a-assets>
+        <a-asset-item id="container" src="https://cdn.glitch.global/58fc0631-93a1-4c90-b53e-c57a6c856b9f/12281_Container_v2_L2.obj?v=1670949525835"> </a-asset-item>
+      </a-assets>
       <a-box position="-1.5 1 -1.3" rotation="0 0 0" color="#4CC3D9"></a-box>
+      <a-entity position="0 1.5 -1" gltf-model="#container"></a-entity>
     </a-scene>
   </body>
 </html>
