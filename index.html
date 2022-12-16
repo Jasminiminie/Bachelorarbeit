@@ -11,7 +11,7 @@
   <body style="margin: 0px; overflow: hidden">
     <h1>hallo</h1>
     <a-scene embedded arjs>
-      <a-text value="Test-String" color="pink" width="20" hight="10" position="-1 1 0"></a-text>
+      <a-text value="Test-String" color="pink" width="10" hight="10" position="-1 2 -1"></a-text>
       <!-- Vorladen von extern genutzen Quellen um das laden zu beschleunigen -->
       <a-assets>
         <a-asset-item
@@ -20,7 +20,7 @@
         >
         </a-asset-item>
       </a-assets>
-      <a-entity gltf-model="#container"></a-entity>
+      <a-entity obj-model="obj: #container"></a-entity>
       <a-entity camera></a-entity>
     </a-scene>
   </body>
