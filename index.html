@@ -11,17 +11,10 @@
   <body style="margin: 0px; overflow: hidden">
     <h1>hallo</h1>
     <a-scene embedded arjs>
-      <!-- Vorladen von extern genutzen Quellen um das laden zu beschleunigen -->
-      <a-assets>
-        <a-asset-item
-          id="container"
-          src="https://cdn.glitch.global/58fc0631-93a1-4c90-b53e-c57a6c856b9f/12281_Container_v2_L2.obj?v=1670949525835"
-        >
-        </a-asset-item>
-      </a-assets>
-      <a-entity gltf-model="#container"></a-entity>
+            <a-text value="Test-String" color="pink" width="10" position="0 0 0"></a-text>
+
+  
       <a-entity camera></a-entity>
-      <a-text value="Test-String" color="pink" width="10" position="1 -2-1"></a-text>
     </a-scene>
   </body>
 </html>
