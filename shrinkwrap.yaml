@@ -1,0 +1,12 @@
+dependencies:
+  aframe-animation-timeline-component: 2.0.0
+packages:
+  /aframe-animation-timeline-component/2.0.0:
+    dev: false
+    resolution:
+      integrity: sha512-EbAzphGirIXVO0laUEhQiDl1LVKz8v59xyb/mwc+k983JldmtghwejaFrhOidFpJhl4s8lzz80CFHShQEkglSA==
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  aframe-animation-timeline-component: ^2.0.0
