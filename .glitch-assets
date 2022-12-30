@@ -21,3 +21,7 @@
 {"name":"scene.gltf","date":"2022-12-30T12:39:13.541Z","url":"https://cdn.glitch.global/58fc0631-93a1-4c90-b53e-c57a6c856b9f/scene.gltf","type":"model/gltf+json","size":3969,"thumbnail":"https://cdn.glitch.global/58fc0631-93a1-4c90-b53e-c57a6c856b9f/thumbnails%2Fscene.gltf","thumbnailWidth":210,"thumbnailHeight":210,"uuid":"ApAulnH78hRRSj3k"}
 {"uuid":"ApAulnH78hRRSj3k","deleted":true}
 {"name":"person.gltf","date":"2022-12-30T12:39:13.541Z","url":"https://cdn.glitch.global/58fc0631-93a1-4c90-b53e-c57a6c856b9f/person.gltf","type":"model/gltf+json","size":3969,"thumbnail":"https://cdn.glitch.global/58fc0631-93a1-4c90-b53e-c57a6c856b9f/thumbnails%2Fscene.gltf","thumbnailWidth":210,"thumbnailHeight":210,"uuid":"ApAulnH78hRRSj3k"}
+{"uuid":"ApAulnH78hRRSj3k","deleted":true}
+{"name":"FinalBaseMesh.obj","date":"2022-12-30T13:18:57.683Z","url":"https://cdn.glitch.global/58fc0631-93a1-4c90-b53e-c57a6c856b9f/FinalBaseMesh.obj","type":"application/x-tgif","size":2581769,"thumbnail":"https://cdn.glitch.global/58fc0631-93a1-4c90-b53e-c57a6c856b9f/thumbnails%2FFinalBaseMesh.obj","thumbnailWidth":210,"thumbnailHeight":210,"uuid":"Edwf8QypM9ZDJL3q"}
+{"uuid":"Edwf8QypM9ZDJL3q","deleted":true}
+{"name":"person.obj","date":"2022-12-30T13:18:57.683Z","url":"https://cdn.glitch.global/58fc0631-93a1-4c90-b53e-c57a6c856b9f/person.obj","type":"application/x-tgif","size":2581769,"thumbnail":"https://cdn.glitch.global/58fc0631-93a1-4c90-b53e-c57a6c856b9f/thumbnails%2FFinalBaseMesh.obj","thumbnailWidth":210,"thumbnailHeight":210,"uuid":"Edwf8QypM9ZDJL3q"}
