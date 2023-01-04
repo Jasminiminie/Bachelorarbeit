@@ -330,11 +330,13 @@
       <a-scene embedded arjs>
         <!-- Vorladen von extern genutzen Quellen um das laden zu beschleunigen -->
         <a-assets>
+          <!-- Quelle: https://free3d.com/3d-model/male-base-mesh-6682.html; Abgerufen am 04.01.2023 -->
           <a-asset-item
             id="person"
             src="https://cdn.glitch.global/58fc0631-93a1-4c90-b53e-c57a6c856b9f/person.obj?v=1672406337683"
           >
           </a-asset-item>
+          <!-- Quelle: https://free3d.com/3d-model/hp-laptop-high-poly--29640.html; Abgerufen am 04.01.2023 -->
           <a-asset-item
             id="laptop"
             src="https://cdn.glitch.global/58fc0631-93a1-4c90-b53e-c57a6c856b9f/laptop.obj?v=1672825842119"
@@ -342,7 +344,7 @@
           </a-asset-item>
         </a-assets>
         <a-entity
-          position="-1 3 -6"
+          position="-2 3 -6"
           obj-model="obj: #person"
           scale="0.1 0.1 0.1"          
         ></a-entity>
@@ -351,9 +353,7 @@
           obj-model="obj: #laptop"
           scale="0.1 0.1 0.1"   
         ></a-entity>
-        <a-text value="Benutzer" color="black" width="10" hight="10" position="-1 2 -6"></a-text>
-        <a-text value="Person, die 'mit dem Web' interagiert" color="black" width="10" hight="10" position="-1 1 -6"></a-text>
-        <a-text value="'Entitaet' die mit dem Internet interagiert -> IOT!" color="black" width="10" hight="10" position="-1 0 -6"></a-text>
+        <a-text value="Benutzer \n Person, die 'mit dem Web' interagiert \n 'Entitaet' die mit dem Internet interagiert -> IOT!" color="black"  hight="10" position="-2 2 -6"></a-text>
         <iframe
           id="folie50-iframe"
           allow="camera;gyroscope;accelerometer;magnetometer;"
