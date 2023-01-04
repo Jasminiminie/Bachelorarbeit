@@ -335,14 +335,25 @@
             src="https://cdn.glitch.global/58fc0631-93a1-4c90-b53e-c57a6c856b9f/person.obj?v=1672406337683"
           >
           </a-asset-item>
+          <a-asset-item
+            id="laptop"
+            src="https://cdn.glitch.global/58fc0631-93a1-4c90-b53e-c57a6c856b9f/laptop.obj?v=1672825842119"
+          >
+          </a-asset-item>
         </a-assets>
         <a-entity
           position="-1 3 -6"
           obj-model="obj: #person"
-          scale="0.1 0.1 0.1"   
-         
+          scale="0.1 0.1 0.1"          
         ></a-entity>
-        <a-text value="Person" color="black" width="10" hight="10" position="-1 3 -6"></a-text>
+        <a-entity
+          position="0 3 -6"
+          obj-model="obj: #laptop"
+          scale="0.1 0.1 0.1"   
+        ></a-entity>
+        <a-text value="Benutzer" color="black" width="10" hight="10" position="-1 2 -6"></a-text>
+        <a-text value="Person, die 'mit dem Web' interagiert" color="black" width="10" hight="10" position="-1 1 -6"></a-text>
+        <a-text value="'Entitaet' die mit dem Internet interagiert -> IOT!" color="black" width="10" hight="10" position="-1 0 -6"></a-text>
         <iframe
           id="folie50-iframe"
           allow="camera;gyroscope;accelerometer;magnetometer;"
