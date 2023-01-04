@@ -354,8 +354,11 @@
           obj-model="obj: #laptop"
           scale="0.5 0.5 0.5"   
         ></a-entity>
-        <a-box color="blue" depth="0.1" height="1" width="1"
-               position="0 0.1 -6"></a-box>
+        <a-assets>
+        <img id="ielogo" src="https://cdn.glitch.global/58fc0631-93a1-4c90-b53e-c57a6c856b9f/ielogo.png?v=1672828153082">
+        </a-assets>
+        <a-box src="#ielogo" color="white" depth="0" height="1" width="1"
+               position="0 1 -6.5"></a-box>
         <iframe
           id="folie50-iframe"
           allow="camera;gyroscope;accelerometer;magnetometer;"
