@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>AR in Unterrichtsskripten</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
+  </head>
+
+  <body style="margin: 0px; overflow: hidden">
+    <a-scene embedded arjs>
+      <!-- Vorladen von extern genutzen Quellen um das laden zu beschleunigen -->
+      <a-assets>
+        <!-- Quelle: https://free3d.com/3d-model/male-base-mesh-6682.html; Abgerufen am 04.01.2023 -->
+        <a-asset-item
+          id="person"
+          src="https://cdn.glitch.global/58fc0631-93a1-4c90-b53e-c57a6c856b9f/person.obj?v=1672406337683"
+        >
+        </a-asset-item>
+        <!-- Quelle: https://free3d.com/3d-model/hp-laptop-high-poly--29640.html; Abgerufen am 04.01.2023 -->
+        <a-asset-item
+          id="laptop"
+          src="https://cdn.glitch.global/58fc0631-93a1-4c90-b53e-c57a6c856b9f/laptop.obj?v=1672825842119"
+        >
+        </a-asset-item>
+        <!--<a href="https://www.flaticon.com/de/kostenlose-icons/browser" title="browser Icons">Browser Icons erstellt von Smashicons - Flaticon</a>-->
+        <img
+          id="browser"
+          src="https://cdn.glitch.global/58fc0631-93a1-4c90-b53e-c57a6c856b9f/browser.png?v=1672828655818"
+        />
+        <!--Quelle: https://free3d.com/3d-model/main-frame-server-3d-model-with-texture-338981.html; Abgerufen am 04.01.2023-->
+        <a-asset-item
+          id="server"
+          src="https://cdn.glitch.global/58fc0631-93a1-4c90-b53e-c57a6c856b9f/server.obj?v=1672831803134"
+        ></a-asset-item>
+        <img
+          id="servervorne"
+          src="https://cdn.glitch.global/58fc0631-93a1-4c90-b53e-c57a6c856b9f/server%20front.png?v=1672832294277"
+        />
+      </a-assets>
+      <a-entity
+        position="-4 0 -6"
+        obj-model="obj: #person"
+        scale="0.2 0.2 0.2"
+      ></a-entity>
+      <a-text
+        value="Benutzer \n Person, die 'mit dem Web' interagiert \n 'Entitaet' die mit dem Internet interagiert \n -> IOT!"
+        hight="10"
+        position="-5 -1 -6"
+      ></a-text>
+
+      <a-entity
+        position="0 2 -6"
+        obj-model="obj: #laptop"
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+
+      <a-box
+        src="#browser"
+        color="white"
+        depth="0"
+        height="1"
+        width="1"
+        position="0 3 -6.5"
+      ></a-box>
+      <a-text
+        value="Client \n Programm, dass vom Rechner\n des Benutzers auf\n entfernte Web-Server zugreift \n Browser \n spezielle Art von Client fuer \n die Nutzung im Web \n greift auf Ressourcen zu, \n die auf Web-Servern gespeichert sind \n User Agent \n Browser greift stellvertretend \n als Agent des Benutzers zu"
+        hight="10"
+        position="0 0 -6"
+      ></a-text>
+
+      <a-entity
+        position="4 2 -6"
+        obj-model="obj: #server"
+        scale="0.01 0.01 0.01"
+        material="src: #servervorne"
+      ></a-entity>
+      <a-text
+        value="Server\n Programm/Prozess auf einem Rechner,\n der Funktionalitaeten bereitstellt,\n um anfragen von Clients zu be-/verarbeiten\n Web-Server\n Spezialisierte Art von Client fuer die Nutzung im Web\n stellt Ressourcen berit,\n auf die Web-Clients zugreifen koennen"
+        hight="10"
+        position="4 0 -6"
+      ></a-text>
+      <a-marker-camera preset="hiro"></a-marker-camera>
+    </a-scene>
+  </body>
+</html>
